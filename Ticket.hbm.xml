@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="HW12RestHibernate.Ticket" table="ticket">
+		<meta attribute="class-description">
+			This class contains the Ticket detail.
+		</meta>
+		<id name="ticketCode" column="ticket_code" type="int">
+			<generator class="assigned" />
+		</id>
+		<property name="customerName" column="clinet_name" type="string"></property>
+		<property name="origin" column="orgin" type="string"></property>
+		<property name="destination" column="destination" type="string"></property>
+		<property name="date" column="date" type="string"></property>
+		<property name="flightNumber" column="flight_number" type="int"></property>
+
+	</class>
+</hibernate-mapping>
